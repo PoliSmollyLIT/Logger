@@ -16,7 +16,6 @@
         <quarkus.platform.version>3.8.3</quarkus.platform.version>
     </properties>
 
-
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -49,6 +48,10 @@
         <dependency>
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-jdbc-h2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-smallrye-openapi</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
