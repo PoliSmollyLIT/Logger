@@ -1,0 +1,31 @@
+#apiVersion: apps/v1
+#kind: Deployment
+#metadata:
+#  name: logger-service
+#spec:
+#  replicas: 1
+#  selector:
+#    matchLabels:
+#      app: logger-service
+#  template:
+#    metadata:
+#      labels:
+#        app: logger-service
+#    spec:
+#      containers:
+#      - name: logger-service
+#        image: polismollie/logging-service:latest
+#        ports:
+#        - containerPort: 8080
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: logging-service
+#spec:
+#  selector:
+#    app: logger-service
+#  ports:
+#    - protocol: TCP
+#      port: 8080
+#      targetPort: 8080
